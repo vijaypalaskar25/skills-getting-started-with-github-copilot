@@ -142,3 +142,68 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants {
+  margin-top: 12px;
+}
+
+.participants h5 {
+  margin: 0 0 8px 0;
+  color: #1a237e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* display participants as small chips */
+.participants-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.participants-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #e6e9f2;
+  padding: 6px 10px;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(26, 35, 126, 0.04);
+  font-size: 13px;
+  color: #333;
+}
+
+/* small circular avatar with initials */
+.avatar {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3949ab, #1a237e);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* email text style inside chip */
+.participants-list .email {
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* empty state */
+.no-participants {
+  color: #666;
+  font-style: italic;
+  margin: 6px 0 0 0;
+  font-size: 13px;
+}
